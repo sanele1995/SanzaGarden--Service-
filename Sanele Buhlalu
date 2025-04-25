@@ -1,0 +1,22 @@
+function contactWhatsApp() {
+    const phone = "2762519006"; // South Africa country code +27
+    window.open(`https://wa.me/${phone}`, '_blank');
+}
+
+function contactFacebook() {
+    window.open('https://www.facebook.com/search/top?q=Sanele%20Dolph', '_blank');
+}
+
+function sendSMS() {
+    window.location.href = "sms:0762519006?body=Hi%20Sanza%20Garden%20Service,%20I%20need%20help%20with...";
+}
+
+function makeCall() {
+    window.location.href = "tel:0762519006";
+}
+
+document.getElementById('serviceForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Thank you! We received your request. We will contact you soon.');
+    document.getElementById('serviceForm').reset();
+});
