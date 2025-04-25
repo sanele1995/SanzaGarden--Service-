@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanza Garden Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sanza Garden Service</h1>
+        <p>Professional Grass Cutting & Landscaping</p>
+    </header>
+
+    <section class="form-section">
+        <h2>Request Our Service</h2>
+        <form id="serviceForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+            <select id="service" required>
+                <option value="">Select Service</option>
+                <option value="Grass Cutting">Grass Cutting</option>
+                <option value="Landscaping">Landscaping</option>
+                <option value="Full Garden Service">Full Garden Service</option>
+            </select>
+            <input type="text" id="location" placeholder="Your Location or Address" required>
+            <button type="submit">Submit Request</button>
+        </form>
+    </section>
+
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <div class="buttons">
+            <button onclick="contactWhatsApp()">WhatsApp</button>
+            <button onclick="contactFacebook()">Facebook</button>
+            <button onclick="sendSMS()">Send SMS</button>
+            <button onclick="makeCall()">Call Us</button>
+        </div>
+    </section>
+
+    <section class="payment-section">
+        <h2>Pay Online</h2>
+        <p>Bank: TymeBank or Capitec</p>
+        <p>Account Name: Sanele Dolph</p>
+        <p>Account Number: [Your Account Number]</p>
+        <p>Send proof of payment to WhatsApp after payment.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Sanza Garden Service. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
